@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>jQuery Mobile Demos</title>
+	<link rel="shortcut icon" href="favicon.ico">
+	<link rel="stylesheet" href="css/themes/default/jquery.mobile-1.4.5.min.css">
+	<link rel="stylesheet" href="_assets/css/jqm-demos.css">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700">
+	<script src="js/jquery.js"></script>
+	<script src="_assets/js/index.js"></script>
+	<script src="js/jquery.mobile-1.4.5.min.js"></script>
+</head>
+<body>
+<div data-role="page" class="jqm-demos jqm-home">
+    <div data-role="header" class="jqm-header" id="main-header">
+		<h2><img src="img/bar-logo.png" alt="jQuery Mobile"></h2>
+		<p>Version 1.0.0<span class="jqm-version"></span></p>
+		<a href="#" class="jqm-navmenu-link ui-btn ui-btn-icon-notext ui-corner-all ui-icon-bars ui-nodisc-icon ui-alt-icon ui-btn-left">Menu</a>
+		<!--a href="#" class="jqm-search-link ui-btn ui-btn-icon-notext ui-corner-all ui-icon-search ui-nodisc-icon ui-alt-icon ui-btn-right">Search</a-->
+	</div><!-- /header -->
+	<div role="main" class="ui-content jqm-content">
+	    <h2>Gestion</h2>
+		
+		<a href="#" class="ui-shadow ui-btn ui-corner-all ui-btn-inline ui-icon-search ui-btn-icon-notext ui-btn-b ui-mini">icon only button</a>
+		<a href="#" class="ui-shadow ui-btn ui-corner-all ui-btn-inline ui-icon-arrow-l ui-btn-icon-notext ui-btn-b ui-mini">icon only button</a>
+		<a href="#" class="ui-shadow ui-btn ui-corner-all ui-btn-inline ui-icon-arrow-r ui-btn-icon-notext ui-btn-b ui-mini">icon only button</a>
+		<a href="#" class="ui-shadow ui-btn ui-corner-all ui-btn-inline ui-icon-check ui-btn-icon-notext ui-btn-b ui-mini">icon only button</a>
+		<a href="#" class="ui-shadow ui-btn ui-corner-all ui-btn-inline ui-icon-edit ui-btn-icon-notext ui-btn-b ui-mini">icon only button</a>
+		<a href="#" class="ui-shadow ui-btn ui-corner-all ui-btn-inline ui-icon-plus ui-btn-icon-notext ui-btn-b ui-mini">icon only button</a>
+		<a href="#" class="ui-shadow ui-btn ui-corner-all ui-btn-inline ui-icon-delete ui-btn-icon-notext ui-btn-b ui-mini">icon only button</a>
+	  
+		<div data-role="tabs" id="tabs">
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#one" class="ui-btn-active">Articles</a></li>
+					<li><a href="#two">Catégories</a></li>
+					<li><a href="#tree">Tables</a></li>
+					<li><a href="#four">Serveurs</a></li>
+				</ul>
+			</div>
+			
+			<!-- Gestion des articles-->
+			<div id="one" class="ui-body-d ui-content">
+				<div class="ui-body ui-body-a ui-corner-all">
+				<form>
+					<div class="ui-field-contain">
+						<label for="select-native-1">Catégorie :</label>
+						<select name="select-native-1" id="select-native-1" data-mini="true">
+							<option value="1">Entrées</option>
+							<option value="2">Pizzas</option>
+							<option value="3">Plats</option>
+							<option value="4">Boissons</option>
+						</select>
+					</div>
+				</form>
+				<div class="ui-field-contain">
+					<label for="textinput-fc">Titre:</label>
+					<input name="textinput-fc" id="textinput-fc" placeholder="" value="" type="text">
+				</div>
+				<div class="ui-field-contain">
+					<label for="textinput-rf">Référence:</label>
+					<input name="textinput-rf" id="textinput-fc" placeholder="" value="" type="text">
+				</div>
+				<form>
+                    <label for="textarea-1">Description:</label>
+                    <textarea name="textarea-1" id="textarea-1"></textarea>
+                </form>
+				<div class="ui-field-contain">
+				     <label for="file">Image:</label>
+                     <input name="file" id="file" value="" type="file">
+				</div>
+				</div>
+			</div>
+			
+			<!-- Gestion des catégories-->
+			<div id="two" class="ui-body-d ui-content">
+				<div class="ui-body ui-body-a ui-corner-all">
+				<div class="ui-field-contain">
+					<label for="textinput-fc">Titre:</label>
+					<input name="textinput-fc" id="textinput-fc" placeholder="" value="" type="text">
+				</div>
+				<div class="ui-field-contain">
+					<label for="textinput-rf">Référence:</label>
+					<input name="textinput-rf" id="textinput-fc" placeholder="" value="" type="text">
+				</div>
+				<form>
+                    <label for="textarea-2">Description:</label>
+                    <textarea name="textarea-2" id="textarea-2"></textarea>
+                </form>
+				<div class="ui-field-contain">
+				     <label for="file">Image:</label>
+                     <input name="file" id="file" value="" type="file">
+				</div>
+				</div>
+			</div>
+			
+			<!-- Gestion des tables-->
+			<div id="tree" class="ui-body-d ui-content">
+				<div class="ui-body ui-body-a ui-corner-all">
+				<div class="ui-field-contain">
+					<label for="textinput-rf">Référence:</label>
+					<input name="textinput-rf" id="textinput-fc" placeholder="" value="" type="text">
+				</div>
+				<form>
+                    <label for="textarea-3">Description:</label>
+                    <textarea name="textarea-3" id="textarea-3"></textarea>
+                </form>
+				</div>
+			</div>
+			<!-- Gestion des serveurs-->
+			<div id="four" class="ui-body-d ui-content">
+				<div class="ui-body ui-body-a ui-corner-all">
+				<div class="ui-field-contain">
+					<label for="textinput-fc">Nom/Prénom:</label>
+					<input name="textinput-fc" id="textinput-fc" placeholder="" value="" type="text">
+				</div>
+				<div class="ui-field-contain">
+					<label for="textinput-rf">CIN:</label>
+					<input name="textinput-rf" id="textinput-fc" placeholder="" value="" type="text">
+				</div>
+				<form>
+                    <label for="textarea-4">Description:</label>
+                    <textarea name="textarea-4" id="textarea-4"></textarea>
+                </form>
+				<div class="ui-field-contain">
+				     <label for="file">Photo:</label>
+                     <input name="file" value="" type="file">
+				</div>
+				</div>
+			</div>
+		</div>
+	</div><!-- /content -->
+	
+	<div data-role="panel" class="jqm-navmenu-panel" data-position="left" data-display="overlay" data-theme="a">
+	    <ul class="jqm-list ui-alt-icon ui-nodisc-icon">
+            <li data-filtertext="demos homepage" data-icon="recycle"><a href="index.html" data-ajax="false">Demandes</a></li>
+			<li data-filtertext="demos homepage" data-icon="clock"><a href="histo.html" data-ajax="false">Historique</a></li>
+			<li data-filtertext="demos homepage" data-icon="edit"><a href="gestion.html" data-ajax="false">Gestion</a></li>
+			<li data-filtertext="demos homepage" data-icon="grid"><a href="compta.html" data-ajax="false">Comptabilité</a></li>
+			<li data-filtertext="demos homepage" data-icon="gear"><a href="param.html" data-ajax="false">Paramètres</a></li>
+		</ul>
+	</div>
+</div><!-- /page -->
+</body>
+</html>
